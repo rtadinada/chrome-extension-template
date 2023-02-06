@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+        "outDir": "./dist/",
+        "module": "ES2020",
+        "jsx": "react",
+        "allowSyntheticDefaultImports": true,
+        "strict": true,
+        "sourceMap": true,
+        "moduleResolution": "node",
+        "baseUrl": "src",
+        "paths": {
+            "lib/*": ["lib/*"],
+            "components/*": ["app/components/*"]
+        }
+    }
+}

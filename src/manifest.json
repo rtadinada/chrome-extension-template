@@ -1,0 +1,22 @@
+{
+    "manifest_version": 3,
+    "name": "Chrome Extension Template",
+    "version": "0.0.1",
+    "description": "A Chrome extension template for adding a pop-up modal to a page and making background requests",
+    "content_scripts": [
+        {
+            "js": ["content.bundle.js"],
+            "matches": ["https://www.google.com/chrome*"]
+        }
+    ],
+    "background": {
+        "service_worker": "background.bundle.js"
+    },
+    "web_accessible_resources": [
+        {
+            "resources": ["/assets/*"],
+            "matches": ["https://www.google.com/*"]
+        }
+    ],
+    "host_permissions": ["https://*/*"]
+}
